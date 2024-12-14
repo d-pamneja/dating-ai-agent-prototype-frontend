@@ -19,7 +19,6 @@ function App() {
       }
   }
 
-  // Call the activation function when the app loads
   activateCorsAnywhere();
 
 
