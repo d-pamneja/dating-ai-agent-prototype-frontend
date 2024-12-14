@@ -9,7 +9,7 @@
     "routes": [
       {
         "src": "/aiAgent/(.*)",
-        "dest": "http://13.233.115.212/aiAgent/$1"
+        "dest": "http://13.233.115.212/aiAgent/"
       }
     ]
   }
