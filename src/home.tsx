@@ -118,8 +118,10 @@ export const LokiMuseChatPrototype = () => {
                   <div className="bg-purple-100 p-3 rounded-lg mb-2 italic">
                     <strong>Loki's Muse Response</strong>
                     <br />
-                    // @ts-ignore
-                    {agentIntervention.output}
+                    {
+                      // @ts-ignore
+                      agentIntervention.output
+                    }
                   </div>
                 )}
   
