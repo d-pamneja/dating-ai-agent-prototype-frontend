@@ -1,5 +1,16 @@
 {
-    "rewrites": [
-        { "source": "/(.*)", "destination": "/" }
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/aiAgent/(.*)",
+        "dest": "http://13.233.115.212/aiAgent/$1"
+      }
     ]
-}
+  }
+  
