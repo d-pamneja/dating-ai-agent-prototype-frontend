@@ -1,7 +1,7 @@
 const aiMindURL = "http://13.233.115.212"
 
 export const getQuestion = async (conversation : any) => {
-    const res = await fetch(`${aiMindURL}/aiAgent/getQuestion`, {
+    const res = await fetch(`https://cors-anywhere.herokuapp.com/${aiMindURL}/aiAgent/getQuestion`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json', 
