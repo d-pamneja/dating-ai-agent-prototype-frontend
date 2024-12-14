@@ -1,4 +1,3 @@
-import axios from "axios";
 const aiMindURL = "http://13.233.115.212"
 
 export const getQuestion = async (conversation : any) => {
