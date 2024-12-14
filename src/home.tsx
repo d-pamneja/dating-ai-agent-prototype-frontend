@@ -63,6 +63,7 @@ export const LokiMuseChatPrototype = () => {
         setLoading(true)
       const response = await getQuestion(JSON.stringify(messagesText));
       if (response) {
+        console.log(response)
         toast.success('Scroll Down to see Intervention ↓', { id: 'fetchResponse' });
         setAgentIntervention({ "output": response.response });
         setLoading(false)

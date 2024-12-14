@@ -1,8 +1,8 @@
-const proxyURL = "https://dating-ai-agent-prototype-backend.vercel.app";
+const proxyURL = "https://cors-anywhere.herokuapp.com";
 const aiMindURL = "http://13.233.115.212";
 
 export const getQuestion = async (conversation: any) => {
-    const res = await fetch(`${proxyURL}?url=${encodeURIComponent(`${aiMindURL}/aiAgent/getQuestion`)}`, {
+    const res = await fetch(`${proxyURL}/${aiMindURL}/aiAgent/getQuestion`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
