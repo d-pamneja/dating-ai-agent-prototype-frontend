@@ -1,4 +1,4 @@
-const proxyURL = "https://proxy-backend.vercel.app/api";
+const proxyURL = "https://dating-ai-agent-prototype-backend.vercel.app";
 const aiMindURL = "http://13.233.115.212";
 
 export const getQuestion = async (conversation: any) => {
